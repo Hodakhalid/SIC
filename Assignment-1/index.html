@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,193 @@
     <meta name="keywords" content="JavaScript, Student, Grade, Calculator, JS, SIC">
     <meta name="author" content="Huda, Haidy, Mariam">
 
-    <title>Student Grade Calculator</title>
+    <title>GradeFlow</title>
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/LOGO.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <section>
-        <img src="assets/Code_Generated_Image.png" alt="">
-    </section>
-    
+    <!--///////////////////////////////// navbar //////////////////////////////////-->
+
+    <header>
+
+        <div class="logo">
+            <img src="assets/LOGO.svg" alt="this is logo image">
+            <p>GradeFlow</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#workflow">Workflow</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="btn">
+            <button onclick="start()">
+                <a href="#">Start Calculate &rarr;</a>
+            </button>
+        </div>
+
+    </header>
+
+
+    <main>
+        <!--/////////////////////////////////HERO//////////////////////////////////-->
+
+        <section id="hero">
+            <div class="hero-content">
+
+                <h1>
+                    Student Grade<span> Calculator</span>
+                </h1>
+
+                <p>
+                    Calculate your GPA with ease, track your academic progress,<br> and discover the grades you need to
+                    achieve your goals.<br> Everything you need to stay on top of your academic journey is in one place.
+                </p>
+
+                <div class="btn">
+                    <button onclick="start()">
+                        <a href="#">Start Calculate &rarr;</a>
+                    </button>
+
+                    <button class="learn">
+                        <a href="#about">Learn More
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!--/////////////////////////////////TEAM-MEMBERS//////////////////////////////////-->
+
+        <section id="team">
+            <div>
+                <h2>Meet Our Team</h2>
+            </div>
+
+            <div class="team-member">
+                <div class="member member-one">
+                    <img src="assets/HAIDY.png" alt="haidy photo" loading="lazy">
+                    <h3>Haidy Araby</h3>
+                    <p>Front-End Developer</p>
+                    <i class="minus fa-solid fa-minus"></i>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="member member-two">
+                    <img src="assets/HUDA.png" alt="huda photo" loading="lazy">
+                    <h3>Huda Khalid</h3>
+                    <p>Front-End Developer</p>
+                    <i class="minus fa-solid fa-minus"></i>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="member member-three">
+                    <img src="assets/MARIAM.png" alt="mariam photo" loading="lazy">
+                    <h3>Mariam Halawa</h3>
+                    <p>Front-End Developer</p>
+                    <i class="minus fa-solid fa-minus"></i>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--/////////////////////////////////ABOUT//////////////////////////////////-->
+
+        <section id="about">
+            <div class="about-img">
+                <img src="assets/ABOUT.png" alt="about imge" loading="lazy">
+            </div>
+
+            <div class="about-content">
+                <h2>About<span> GradeFlow</span></h2>
+
+                <p>
+                    GradeWise is a simple and user-friendly web application designed <br>
+                    to help students calculate their grades quickly and accurately. By<br>
+                    entering the required information, students can instantly determine<br>
+                    their academic grade, understand their performance, and stay<br>
+                    motivated to achieve better results.<br><br>
+                    Our goal is to make grade calculation easy, fast, and accessible<br>
+                    for every student.
+                </p>
+
+                <div class="cards">
+                    <div class="card">
+                        <div>
+                            <i class="fa-solid fa-chart-column"></i>
+                        </div>
+                        <div>
+                            <h3>Accurate Results</h3>
+                            <p>Calculate grades with precision.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div>
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div>
+                            <h3>Fast & Simple</h3>
+                            <p>Get your result in seconds.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h3>Student Friendly</h3>
+                            <p>Designed with an easy-to-use interface.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div>
+                            <i class="fa-regular fa-lightbulb"></i>
+                        </div>
+                        <div>
+                            <h3>Academic Support</h3>
+                            <p>Helps students understand their performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+    
 <script src="script.js"></script>
+
 </html>
