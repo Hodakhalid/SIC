@@ -1,19 +1,32 @@
 
 :root {
-    --primary: #E85D04;
-    --secondary: #F48C06;
-    --dark: #1F1F1F;
-    --background: #FAFAF8;
-    --card: #FFFFFF;
-    --card-hover :#a6511890;
-    --text-dark: #252525;
-    --text-light:#E8E4DD;
+    /* Main Colors */
+    --primary-color: #6031DF;
+    --primary-hover: #5124C8;
+    --dark-color: #1A1B20;
 
-    --shadow-sm:0 4px 10px rgba(0,0,0,.08);
-    --shadow-md:0 10px 30px rgba(0,0,0,.12);
-    --shadow-lg:0 15px 40px rgba(0,0,0,.18);
+    /* Backgrounds */
+    --background-color: #FFFFFF;
+    --card-background: #FEFEFE;
+    --soft-background: #F9F9FA;
 
-    --transition:.3s ease-in-out;
+    /* Text */
+    --text-color: #1A1B20;
+    --secondary-text: #5C5E66;
+    --muted-text: #8A90A0;
+
+    /* Borders & Shadows */
+    --border-color: #EDEDEE;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+
+    /* Success / Stock */
+    --success-color: #03880e24;
+    --success-background: #F4F9F1;
+    --success-border: #D4E7D0;
+
+    /* Danger */
+    --danger-color: #DC2626;
+
 }
 
 *{
